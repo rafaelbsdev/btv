@@ -1,0 +1,19 @@
+.main {
+  border: 3px solid #1F1D1D;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  height: 250px;
+  width: 600px;
+  margin: 200px auto;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+
+.bg {
+  background-image: url('../src/styles/img/BG.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}

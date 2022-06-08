@@ -1,0 +1,24 @@
+.createUser {
+  /* border: 2px solid gold; */
+  display: flex;
+  flex-direction: column;
+}
+
+.createUser input {
+  margin: 0 5px 10px 0;
+  width: 178px;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.createUser button {
+  margin-top: 20px;
+  width: 178px;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  background-color: #5F5959;
+}

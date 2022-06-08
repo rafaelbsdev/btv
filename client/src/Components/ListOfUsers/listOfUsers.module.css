@@ -1,0 +1,27 @@
+.container {
+  border: 1px solid #1F1D1D;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 243px;
+  color: #fff;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 25px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #6C6666;
+  border-right: 1px solid #6C6666;
+  border-top: 1px solid #6C6666;
+  border-left: 1px solid #6C6666;
+}
+
+.btn {
+  margin-bottom: 3px;
+  margin-left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}

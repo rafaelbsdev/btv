@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #5F5959;
+  height: 60px;
+  width: 100vw;
+}
+
+.home {
+  color: #fff;
+  margin: 0 0 0 15px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.social>a {
+  margin-right: 15px;
+  cursor: pointer;
+  border-color: #fff;
+}

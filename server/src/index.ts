@@ -11,6 +11,7 @@ require('dotenv').config({
 
 const main = async () => {
   await createConnection({
+    host: 'localhost',
     type: 'postgres',
     database: 'postgres',
     username: 'postgres',
@@ -28,8 +29,8 @@ const main = async () => {
     graphiql: true,
   }));
 
-  app.listen(5432, () => {
-    console.log('Server on port 5432');
+  app.listen(4000, () => {
+    console.log('Server on port 4000');
   });
 };
 

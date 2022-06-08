@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useMutation } from '@apollo/client';
-import { UPDATE_PASSWORD } from '../GraphQL/Mutation';
+import { UPDATE_PASSWORD } from '../../GraphQL/Mutation';
+import styles from './updatePassword.module.css';
+// import {} from 'bootstrap';
 
 function UpdatePassword() {
   const [username, setUsername] = useState('');
@@ -11,11 +13,11 @@ function UpdatePassword() {
 
   if (error) {
     return (
-      <h1>User Does Not Exist</h1>
+      <div className={styles.alert}>User Does Not Exist!</div>
     );
   }
   return (
-    <div>
+    <div className={styles.update}>
       <input type="text" placeholder="Username" onChange={(e) => { setUsername(e.target.value); }} />
       <input type="password" placeholder="Your Password" onChange={(e) => { setOldPassword(e.target.value); }} />
       <input type="password" placeholder="New Password" onChange={(e) => { setNewPassword(e.target.value); }} />

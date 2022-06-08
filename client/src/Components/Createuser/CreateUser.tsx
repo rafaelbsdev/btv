@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useMutation } from '@apollo/client';
-import { CREATE_USER } from '../GraphQL/Mutation';
+import { CREATE_USER } from '../../GraphQL/Mutation';
+import styles from './createUser.module.css';
 
 function CreateUser() {
   const [name, setName] = useState('');
@@ -13,7 +14,7 @@ function CreateUser() {
   }
 
   return (
-    <div className="createUser">
+    <div className={styles.createUser}>
       <input type="text" placeholder="Name" onChange={(e) => { setName(e.target.value); }} />
       <input type="text" placeholder="Username" onChange={(e) => { setUsername(e.target.value); }} />
       <input type="text" placeholder="Password" onChange={(e) => { setPassword(e.target.value); }} />
